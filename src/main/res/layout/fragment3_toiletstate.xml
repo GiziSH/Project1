@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:textSize="15sp"
+        android:text="남자화장실의 경우,소변기의 상태는 제외됩니다."
+
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/center"
+        android:layout_width="300sp"
+        android:layout_height="210sp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="15dp"
+        android:background="@color/whitewash"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="150sp"/>
+    <ImageView
+        android:id="@+id/text1"
+        android:layout_width="100sp"
+        android:layout_height="60sp"
+        android:src="@drawable/opendoor"
+        android:layout_alignLeft="@id/center"
+        android:layout_alignTop="@id/center"
+        />
+    <ImageView
+        android:id="@+id/text2"
+        android:layout_width="100sp"
+        android:layout_height="60sp"
+        android:src="@drawable/opendoor"
+        android:layout_alignBaseline="@+id/text1"
+        android:layout_alignBottom="@+id/text1"
+        android:layout_toRightOf="@+id/text1"
+        android:layout_toEndOf="@+id/text1"
+        />
+    <ImageView
+        android:id="@+id/text3"
+        android:layout_width="100sp"
+        android:layout_height="60sp"
+        android:src="@drawable/opendoor"
+        android:layout_alignTop="@id/center"
+        android:layout_alignRight="@id/center"
+        />
+    <ImageView
+        android:id="@+id/text4"
+        android:layout_width="100sp"
+        android:layout_height="60sp"
+        android:src="@drawable/opendoor"
+        android:layout_alignBottom="@id/center"
+        android:layout_alignLeft="@id/center"
+        />
+    <ImageView
+        android:id="@+id/text5"
+        android:layout_width="100sp"
+        android:layout_height="60sp"
+        android:src="@drawable/opendoor"
+        android:layout_alignBaseline="@+id/text6"
+        android:layout_alignBottom="@+id/text6"
+        android:layout_toRightOf="@+id/text4"
+        android:layout_toEndOf="@+id/text4"
+        />
+    <ImageView
+        android:id="@+id/text6"
+        android:layout_width="100sp"
+        android:layout_height="60sp"
+        android:src="@drawable/opendoor"
+        android:layout_alignBottom="@id/center"
+        android:layout_alignRight="@id/center"
+        />
+    <TextView
+        android:layout_width="30sp"
+        android:layout_height="80sp"
+        android:background="@color/frenchblue"
+        android:text="출\n입\n구"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignRight="@+id/center"
+        android:layout_marginTop="140dp"
+        android:id="@+id/door" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="30dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                app:srcCompat="@drawable/waiting" />
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="화장실 내 혼잡도 : "
+                android:layout_marginLeft="20dp" />
+            <TextView
+                android:id="@+id/wait"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text=""/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp">
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                app:srcCompat="@drawable/smile" />
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="화장실 만족지수 : "
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:id="@+id/sati"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text=""/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:id="@+id/linear">
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="화장실 만족도 투표 go"
+                />
+
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:id="@+id/click"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/click"
+                android:layout_marginLeft="20dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp">
+            <com.github.mikephil.charting.charts.PieChart
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:id="@+id/piechart"
+                >
+
+            </com.github.mikephil.charting.charts.PieChart>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>
+</ScrollView>
